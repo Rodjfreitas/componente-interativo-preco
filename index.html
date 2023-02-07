@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/estilo.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    body{
+      background-image: url(images/bg-pattern.svg);
+    }
+    header{
+      background-image: url(images/pattern-circles.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+  .cabecalho{
+
+  }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <header>
+      <div>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial.<br> No credit card required.</p>
+      </div>
+    </header>
+    <div>
+      <h3>Pageviews</h3>
+      <div id="valor">
+        <h1>$</h1><p>/month</p>
+      </div>
+      <input type="radio" name="seletor" id="monthly">
+      <input type="radio" name="seletor" id="yearly">
+
+      <div>
+        <p>Monthly Billing</p>
+        <div id="seletor">          
+          <label for="monthly">1</label>
+          <label for="yearly">2</label>
+          <div class="ball"></div>
+        </div>
+        <p>Yearly Billing</p>
+        <p>25% discount</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p><img src="images/icon-check.svg"> Unlimited websites</p>
+        <p><img src="images/icon-check.svg"> 100% data ownership</p>
+        <p><img src="images/icon-check.svg"> Email reports</p>
+      </div>
+      <button>Start my trial</button>
+    </div>
+  </section>
+
+  
+   
+
+  
+  
+
+  
+   
+
+  
+  
+  
+
+  
+  
+  <footer class="attribution">
+        Coded by <a href="#">Rodrigo Freitas</a>.
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

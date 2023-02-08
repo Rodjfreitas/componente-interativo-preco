@@ -39,9 +39,9 @@
     </header>
     <div>      
       <h3>Pageviews</h3>
-      <input id="rangeInput" type="range" value="50">
+      <input id="rangeInput" type="range" value="16" min="0" max="32" step="1" onchange="changePrice()">
       <div id="valor">
-        <h1>$</h1><p>/month</p>
+        <h1 id="price">$</h1><p>/month</p>
       </div>
       <input type="radio" name="seletor" id="monthly" checked onclick="thememonthly()">
       <input type="radio" name="seletor" id="yearly" onclick="themeyearly()">

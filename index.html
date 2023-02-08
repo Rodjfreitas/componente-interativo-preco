@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/estilo.css">
   
@@ -25,10 +25,6 @@
       background-position: center;
       
     }
-  .cabecalho{
-
-  }
-
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -41,15 +37,16 @@
         <p>Sign-up for our 30-day trial.<br> No credit card required.</p>
       </div>
     </header>
-    <div>
+    <div>      
       <h3>Pageviews</h3>
+      <input id="rangeInput" type="range" value="50">
       <div id="valor">
         <h1>$</h1><p>/month</p>
       </div>
-      <input type="radio" name="seletor" id="monthly">
+      <input type="radio" name="seletor" id="monthly" checked>
       <input type="radio" name="seletor" id="yearly">
 
-      <div>
+      <div id="select">
         <p>Monthly Billing</p>
         <div id="seletor">          
           <label for="monthly">1</label>

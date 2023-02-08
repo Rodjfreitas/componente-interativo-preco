@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 
 :root{
@@ -38,6 +39,12 @@ header p{
   text-align: center;
   line-height: 20px;
   padding: 10px;
+  color: var(--Text);
+}
+
+h3{
+  color: var(--Text);
+  font-size: 15px;
 }
 
 #valor{
@@ -52,4 +59,52 @@ header p{
   color: var(--Text-CTA-Background);
   font-weight: 800;
 
+}
+
+#valor p{
+  color: var(--Text);
+}
+
+#rangeInput{
+  margin: 30px;
+}
+
+#select{
+  display: flex;
+  justify-content: center;
+}
+
+#select p{
+  padding: 10px 15px;
+}
+
+#seletor{
+  background-color: var(--Toggle-Background);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 8px;
+  width: 60px;
+  height: 26px;
+  transform: scale(.8);
+  border-radius: 12px;
+}
+
+label{
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.ball{
+  background-color: var(--Empty-Slider-Bar);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
 }

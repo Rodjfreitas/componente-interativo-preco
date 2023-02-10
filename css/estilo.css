@@ -109,6 +109,6 @@ label{
   transition: transform 0.2s linear;
 }
 
-.discount{
-
+#radios{
+  opacity: 0;
 }

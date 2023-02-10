@@ -94,7 +94,7 @@ h3{
 
 label{
   cursor: pointer;
-  padding: 0 15px;
+  padding: 0 4px;
 }
 
 .ball{
@@ -107,4 +107,8 @@ label{
   width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+}
+
+.discount{
+
 }

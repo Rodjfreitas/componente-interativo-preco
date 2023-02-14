@@ -5,6 +5,8 @@ preco.innerText = bar.value
 
 
 function themeyearly (){
+  let textoMes = document.querySelector('.texM') 
+  let textoAno = document.querySelector('.texY')  
   let ball = document.querySelector('.ball')
   ball.style.transform = "translateX(30px)"
   let discount = document.querySelector('.discount')
@@ -12,6 +14,9 @@ function themeyearly (){
   discount.style.borderRadius = '15px'
   discount.style.color = 'var(--Discount-Text)'
   discount.style.textDecoration = 'line-through'
+
+  textoAno.style.textDecoration = "underline"
+  textoMes.style.textDecoration = "none"
 
   let preco = document.querySelector('#price')
   let bar = document.querySelector('#rangeInput') 
@@ -23,6 +28,8 @@ function themeyearly (){
 }
 
 function thememonthly(){
+  let textoMes = document.querySelector('.texM') 
+  let textoAno = document.querySelector('.texY')
   let ball = document.querySelector('.ball')
   ball.style.transform = "translateX(0px)"
   
@@ -31,6 +38,9 @@ function thememonthly(){
   discount.style.borderRadius = 'none'
   discount.style.color = 'black'
   discount.style.textDecoration = 'none'
+
+  textoAno.style.textDecoration = "none"
+  textoMes.style.textDecoration = "underline"
 
   let preco = document.querySelector('#price')
   let bar = document.querySelector('#rangeInput') 

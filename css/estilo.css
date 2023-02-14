@@ -47,6 +47,14 @@ h3{
   font-size: 15px;
 }
 
+p{
+  color: var(--Text);
+}
+
+.discount{
+  color: black;
+}
+
 #valor{
   display: flex;
   justify-content: center;
@@ -113,9 +121,66 @@ label{
   opacity: 0;
 }
 
+#infos{
+  padding: 50px;
+}
+
+#infos p{
+  padding: 10px;
+}
+
+button{
+  padding: 10px 50px;  
+  border-radius: 30px;
+  border: none;
+  background-color: var(--Text-CTA-Background);
+  color:var(--CTA-Text) ;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin: 30px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
 
 @media(max-width:768px){
   .discount{
     display: none;
   }
+}
+
+@media(min-width:800px){
+
+  #info{
+    display: grid;
+    grid-template-areas: 
+    'A B';
+  }
+
+ 
+  #infos{
+    grid-area: A;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  #infos p{
+    place-items: right;
+  }
+  #button{
+    grid-area: B;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
 }

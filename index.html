@@ -25,8 +25,7 @@
       background-position: center;
       
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
@@ -59,13 +58,15 @@
         <p class="discount">25% discount</p>
       </div>
     </div>
-    <div>
-      <div>
+    <div id="info">
+      <div id="infos">
         <p><img src="images/icon-check.svg"> Unlimited websites</p>
         <p><img src="images/icon-check.svg"> 100% data ownership</p>
         <p><img src="images/icon-check.svg"> Email reports</p>
       </div>
-      <button>Start my trial</button>
+      <div id="button">
+        <button onclick="alertMsg()">Start my trial</button>
+      </div>
     </div>
   </section>
 

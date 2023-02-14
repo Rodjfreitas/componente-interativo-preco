@@ -17,6 +17,7 @@ function themeyearly (){
   let bar = document.querySelector('#rangeInput') 
   preco.innerText = `${bar.value - (bar.value * 0.25)}` 
   preco.style.color = 'var(--Discount-Text)'
+  //preco.style.textDecoration = 'line-through'
 
   
 }
@@ -35,6 +36,7 @@ function thememonthly(){
   let bar = document.querySelector('#rangeInput') 
   preco.innerText = bar.value 
   preco.style.color = 'var(--Text-CTA-Background)'
+  //preco.style.textDecoration = 'none'
 }
 
 
@@ -51,4 +53,8 @@ radios[0].checked = true
 
 thememonthly()
 
+}
+
+function alertMsg(){
+  window.alert('Este botão não direciona a nenhum ambiente!')
 }
